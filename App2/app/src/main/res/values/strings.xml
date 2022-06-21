@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Phone DB</string>
+    <string name="labelProducent">Producent</string>
+    <string name="labelModel">Model</string>
+    <string name="labelWersja">Werjsa Androida</string>
+    <string name="labelUrl">Strona WWW</string>
+    <string name="buttonWeb">Strona WWW</string>
+    <string name="buttonAnuluj">Anuluj</string>
+    <string name="buttonDodaj">Zapisz</string>
+    <string name="add_button">Add button</string>
+</resources>

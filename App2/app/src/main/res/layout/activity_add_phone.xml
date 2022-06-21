@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditPhoneActivity">
+
+    <TextView
+        android:id="@+id/labelProducent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:contentDescription="@string/labelProducent"
+        android:text="@string/labelProducent"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextProducent"
+        app:layout_constraintEnd_toEndOf="@+id/labelModel"
+        app:layout_constraintTop_toTopOf="@+id/editTextProducent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editTextProducent"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:labelFor="@+id/labelProducent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/labelProducent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/labelModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:text="@string/labelModel"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextModel"
+        app:layout_constraintEnd_toEndOf="@+id/labelWersja"
+        app:layout_constraintTop_toTopOf="@+id/editTextModel"
+        app:layout_constraintVertical_bias="0.516"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editTextModel"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelModel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProducent"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/labelWersja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="10"
+        android:text="@string/labelWersja"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextWersja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextWersja" />
+
+    <EditText
+        android:id="@+id/editTextWersja"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelWersja"
+        app:layout_constraintTop_toBottomOf="@+id/editTextModel"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/labelUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:text="@string/labelUrl"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextUrl"
+        app:layout_constraintEnd_toEndOf="@+id/labelWersja"
+        app:layout_constraintTop_toTopOf="@+id/editTextUrl" />
+
+    <EditText
+        android:id="@+id/editTextUrl"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/labelUrl"
+        app:layout_constraintTop_toBottomOf="@+id/editTextWersja"
+        tools:ignore="TextContrastCheck,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonWeb"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/buttonWeb"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAnuluj"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonAnuluj"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/buttonAnuluj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/buttonAnuluj"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDodaj"
+        app:layout_constraintStart_toEndOf="@+id/buttonWeb"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUrl" />
+
+    <Button
+        android:id="@+id/buttonDodaj"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/buttonDodaj"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAnuluj"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonAnuluj" />
+</androidx.constraintlayout.widget.ConstraintLayout>
